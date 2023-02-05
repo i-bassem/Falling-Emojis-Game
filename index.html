@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Falling Emojis</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/2.png" />
+  </head>
+  <body>
+    <div class="father">
+      <h2>Welcome <button id="btn">Start</button></h2>
+      <br />
+      <div id="imgcont">
+        <img class="images" src="images/1.png" />
+        <img class="images" src="images/2.png" />
+        <img class="images" src="images/3.png" />
+        <img class="images" src="images/4.png" />
+        <img class="images" src="images/5.png" />
+      </div>
+      <br />
+      <!-- SCORES  -->
+      <div id="scorecont">
+        <div class="score love">0</div>
+        <div class="score cool">0</div>
+        <div class="score poker">0</div>
+        <div class="score wink">0</div>
+        <div class="score crazy">0</div>
+      </div>
+      <!-- timer -->
+      <div timer id="timer" class="timer">0:00</div>
+  
+      <!-- Container Box -->
+      <div id="boxcont">
+        <img class="box" src="images/box.jpg" />
+      </div>
+
+      <!-- Moving images -->
+      <div id="movecont">
+        <img class="images love Moving" id="img1" src="images/1.png" />
+        <img class="images cool Moving" id="img2" src="images/2.png" />
+        <img class="images poker Moving" id="img3" src="images/3.png" />
+        <img class="images wink Moving" id="img4" src="images/4.png" />
+        <img class="images crazy Moving" id="img5" src="images/5.png" />
+      </div>
+      
+
+      <div timer id="timer" class="timer"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
