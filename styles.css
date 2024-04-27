@@ -1,10 +1,10 @@
 body {
   zoom: 0.8;
-  /* background-image: url("images/back.jpg"); */
+  background-image: url("images/back.jpg"); 
   overflow-x: hidden;
   overflow-y: hidden;
 }
-/* Use WebP if supported */
+/* Use WebP if supported
 @supports (background-image: url("images/back.webp")) {
   body {
     background-image: url("images/back.webp");
@@ -12,11 +12,11 @@ body {
 }
 
 /* Fallback to another format if WebP isn't supported */
-@supports not (background-image: url("images/back.webp")) {
+/* @supports not (background-image: url("images/back.webp")) {
   body {
     background-image: url("images/back.jpg");
   }
-}
+} */
 
 .father {
   width: 1366px;
