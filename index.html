@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An Emoji Fun Game" />
+
     <title>Falling Emojis</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="images/2.png" />
@@ -13,11 +15,28 @@
       <h2>Welcome <button id="btn">Start</button></h2>
       <br />
       <div id="imgcont">
-        <img class="images" src="images/1.png" />
-        <img class="images" src="images/2.png" />
-        <img class="images" src="images/3.png" />
-        <img class="images" src="images/4.png" />
-        <img class="images" src="images/5.png" />
+        <picture>
+          <!-- Try to use WebP if supported -->
+          <source srcset="images/1.webp" type="image/webp" />
+          <!-- Fallback to PNG if WebP is not supported -->
+          <img class="images" src="images/1.png" alt="Love Emoji" />
+        </picture>
+        <picture>
+          <source srcset="images/2.webp" type="image/webp" />
+          <img class="images" src="images/2.png" alt="Cool Emoji" />
+        </picture>
+        <picture>
+          <source srcset="images/3.webp" type="image/webp" />
+          <img class="images" src="images/3.png" alt="Poker Emoji" />
+        </picture>
+        <picture>
+          <source srcset="images/4.webp" type="image/webp" />
+          <img class="images" src="images/4.png" alt="winky Emoji" />
+        </picture>
+        <picture>
+          <source srcset="images/5.webp" type="image/webp" />
+          <img class="images" src="images/5.png" alt="Crazy Emoji" />
+        </picture>
       </div>
       <br />
       <!-- SCORES  -->
@@ -33,16 +52,37 @@
   
       <!-- Container Box -->
       <div id="boxcont">
-        <img class="box" src="images/box.jpg" />
+        <!-- <img class="box" src="images/box.jpg" alt="Box Container" /> -->
+        <div class="box"></div>
       </div>
 
       <!-- Moving images -->
       <div id="movecont">
-        <img class="images love Moving" id="img1" src="images/1.png" />
-        <img class="images cool Moving" id="img2" src="images/2.png" />
-        <img class="images poker Moving" id="img3" src="images/3.png" />
-        <img class="images wink Moving" id="img4" src="images/4.png" />
-        <img class="images crazy Moving" id="img5" src="images/5.png" />
+        <!-- <img class="images love Moving"  id="img1"  src="images/1.png" alt="Love Emoji" />
+        <img class="images cool Moving"  id="img2"  src="images/2.png" alt="Cool Emoji" />
+        <img class="images poker Moving" id="img3"  src="images/3.png" alt="Poker Emoji"/>
+        <img class="images wink Moving"  id="img4"  src="images/4.png" alt="winky Emoji"/>
+        <img class="images crazy Moving" id="img5"  src="images/5.png" alt="Crazy Emoji"/> -->
+        <picture>
+          <source srcset="images/1.webp" type="image/webp" />
+          <img class="images love Moving"  id="img1" src="images/1.png" alt="Love Emoji" />
+        </picture>
+        <picture>
+          <source srcset="images/2.webp" type="image/webp" />
+          <img class="images cool Moving"  id="img2" src="images/2.png" alt="Cool Emoji" />
+        </picture>
+        <picture>
+          <source srcset="images/3.webp" type="image/webp" />
+          <img class="images poker Moving" id="img3" src="images/3.png" alt="Poker Emoji" />
+        </picture>
+        <picture>
+          <source srcset="images/4.webp" type="image/webp" />
+          <img class="images wink Moving"  id="img4"  src="images/4.png" alt="winky Emoji" />
+        </picture>
+        <picture>
+          <source srcset="images/5.webp" type="image/webp" />
+          <img cclass="images crazy Moving" id="img5"  alt="Crazy Emoji" />
+        </picture>
       </div>
       
 
